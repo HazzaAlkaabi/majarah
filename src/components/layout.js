@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../images/majarah.svg'
+import log_logo from '../images/log_logo.svg'
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -15,7 +16,8 @@ export default ({ children }) => (
         <img src={logo} alt="Website logo" />
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/log/">Log</ListLink>
+        <img style={{height: `25px`, width: `25px`}} src={log_logo} alt="Log logo" />
+        <ListLink to="/log">Log</ListLink>
       </ul>
     </header>
     {children}
