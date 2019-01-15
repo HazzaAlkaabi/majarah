@@ -16,8 +16,8 @@ export default ({ children }) => (
         <img src={logo} alt="Website logo" />
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
-        <img style={{height: `25px`, width: `25px`}} src={log_logo} alt="Log logo" />
-        <ListLink to="/log">Log</ListLink>
+        <img style={{height: `25px`, width: `25px`, marginBottom: `0`, marginRight: `10px`}} src={log_logo} alt="Log logo" />
+        <ListLink to="/log" style={{float: `right`}}>Log</ListLink>
       </ul>
     </header>
     {children}
