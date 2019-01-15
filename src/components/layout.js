@@ -1,5 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+import logo from '../images/majarah.svg'
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -10,11 +11,10 @@ const ListLink = props => (
 export default ({ children }) => (
   <div style={{ margin: `3rem auto`, maxWidth: 950, padding: `0 1rem` }}>
     <header style={{ marginBottom: `1.5rem` }}>
-      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>Majarah</h3>
+      <Link to="/">
+        <img src={logo} alt="Website logo" />
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/">Home</ListLink>
         <ListLink to="/about/">About</ListLink>
       </ul>
     </header>
