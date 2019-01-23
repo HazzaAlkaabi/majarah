@@ -4,13 +4,13 @@ import styled from 'styled-components'
 
 const ProjectItem = styled.div`
   display: inline;
-  margin: 20px;
+  margin-right : 20px;
 `
 
 export default () => (
   <Layout>
     <h1>Welcome to Hazza Alkaabi's web home, Majarah.</h1>
-    <div style={{ marginLeft: `80px`, marginBottom: `40px`}}>
+    <div style={{ marginLeft: `80px`, marginBottom: `70px`, marginTop: `150px`}}>
       <div
         style={{
           display: `block`,
@@ -20,7 +20,7 @@ export default () => (
           height: `28px`,
           textAlign: `center`,
           fontWeight: `bold`,
-          marginBottom: `10px`
+          marginBottom: `35px`
         }}
       >
         Originals
@@ -41,7 +41,7 @@ export default () => (
           height: `28px`,
           textAlign: `center`,
           fontWeight: `bold`,
-          marginBottom: `10px`
+          marginBottom: `35px`
         }}
       >
         Contributions

@@ -21,6 +21,6 @@ export default ({ children }) => (
       </ul>
     </header>
     {children}
-    <footer style={{position: `absolute`, bottom: `0`, marginBottom: `20px`}}><Link to="/about">Hazza Alkaabi</Link> © 2015-2019</footer>
+    <footer style={{position: `absolute`, bottom: `0`, marginBottom: `50px`}}><Link to="/about">Hazza Alkaabi</Link> © 2015-2019</footer>
   </div>
 )
