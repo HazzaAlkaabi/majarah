@@ -1,16 +1,26 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 
 const ProjectItem = styled.div`
   display: inline;
-  margin-right : 20px;
+  margin-right: 20px;
 `
 
 export default () => (
   <Layout>
+    <div className="application">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Majarah | Home</title>
+        <link rel="canonical" href="https://majarah.net/" />
+      </Helmet>
+    </div>
     <h1>Welcome to Hazza Alkaabi's web home, Majarah.</h1>
-    <div style={{ marginLeft: `80px`, marginBottom: `70px`, marginTop: `150px`}}>
+    <div
+      style={{ marginLeft: `80px`, marginBottom: `70px`, marginTop: `150px` }}
+    >
       <div
         style={{
           display: `block`,
@@ -20,7 +30,7 @@ export default () => (
           height: `28px`,
           textAlign: `center`,
           fontWeight: `bold`,
-          marginBottom: `35px`
+          marginBottom: `35px`,
         }}
       >
         Originals
@@ -31,7 +41,7 @@ export default () => (
       <ProjectItem>RCR3K</ProjectItem>
       <ProjectItem>Sibyl</ProjectItem>
     </div>
-    <div style={{ marginLeft: `80px`, marginTop: `20px`}}>
+    <div style={{ marginLeft: `80px`, marginTop: `20px` }}>
       <div
         style={{
           display: `block`,
@@ -41,7 +51,7 @@ export default () => (
           height: `28px`,
           textAlign: `center`,
           fontWeight: `bold`,
-          marginBottom: `35px`
+          marginBottom: `35px`,
         }}
       >
         Contributions
