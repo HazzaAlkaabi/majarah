@@ -8,11 +8,13 @@ const StyledLink = styled(Link)`
 display: inline;
 padding: 4px;
 margin-right: 30px;
+font-weight: 100 !important;
 &:hover { 
   border: 3px solid black; 
   transition: border 0.1s ease-in-out; 
   -webkit-transition: border 0.1s ease-in-out; 
   -moz-transition: border 0.1s ease-in-out; 
+  text-decoration: none !important;
 }`
 
 export default () => (
@@ -26,7 +28,7 @@ export default () => (
     </div>
     <h1>Welcome to <b>Hazza Alkaabi</b>'s web home, Majarah.</h1>
     <div
-      style={{ marginLeft: `80px`, marginBottom: `70px`, marginTop: `150px` }}
+      style={{ marginBottom: `70px`, marginTop: `80px` }}
     >
       <div
         style={{
@@ -49,7 +51,7 @@ export default () => (
       <StyledLink to="/RCR3K">RCR3K</StyledLink>
       <StyledLink to="/Sibyl">Sibyl</StyledLink>
     </div>
-    <div style={{ marginLeft: `80px`, marginTop: `20px`, marginBottom: `250px`}}>
+    <div style={{ marginTop: `20px`}}>
       <div
         style={{
           display: `block`,
@@ -65,7 +67,7 @@ export default () => (
       >
         Contributions
       </div>
-      <StyledLink to="/Sibyl">Thousand rooms (Arabic translation)</StyledLink>
+      <StyledLink to="/ThousandRoomsTranslation">Thousand rooms (Arabic translation)</StyledLink>
     </div>
   </Layout>
 )

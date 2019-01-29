@@ -9,7 +9,9 @@ export default ({ children }) => (
         <img src={logo} alt="Website logo" />
       </Link>
     </header>
+    <div style={{marginBottom: `250px`, maxWidth: `750px`}}>
     {children}
-    <footer style={{}}><Link to="/about">Hazza Alkaabi</Link> © 2015-2019 | Majarah 3.0</footer>
+    </div>
+    <footer><Link to="/about">Hazza Alkaabi</Link> © 2015-2019 | Majarah 3.0</footer>
   </div>
 )
