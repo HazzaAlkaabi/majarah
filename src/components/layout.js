@@ -10,6 +10,6 @@ export default ({ children }) => (
       </Link>
     </header>
     {children}
-    <footer style={{position: `absolute`, bottom: `0`, marginBottom: `50px`}}><Link to="/about">Hazza Alkaabi</Link> © 2015-2019</footer>
+    <footer style={{}}><Link to="/about">Hazza Alkaabi</Link> © 2015-2019 | Majarah 3.0</footer>
   </div>
 )
