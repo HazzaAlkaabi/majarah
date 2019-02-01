@@ -4,7 +4,7 @@ import logo from '../images/majarah.svg'
 
 export default ({ children }) => (
   <div style={{ margin: `3rem auto`, maxWidth: 1500, padding: `0 1rem` }}>
-    <header style={{ marginBottom: `1.5rem` }}>
+    <header>
       <Link to="/">
         <img src={logo} alt="Website logo" />
       </Link>

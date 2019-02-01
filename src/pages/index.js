@@ -3,19 +3,20 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import Grid from 'react-css-grid'
 
-const StyledLink = styled(Link)` 
-display: inline;
-padding: 4px;
-margin-right: 30px;
-font-weight: 100 !important;
-&:hover { 
-  border: 3px solid black; 
-  transition: border 0.1s ease-in-out; 
-  -webkit-transition: border 0.1s ease-in-out; 
-  -moz-transition: border 0.1s ease-in-out; 
-  text-decoration: none !important;
-}`
+const StyledLink = styled(Link)`
+  padding: 4px;
+  font-weight: 100 !important;
+  &:hover {
+    border: 3px solid black;
+    transition: border 0.1s ease-in-out;
+    -webkit-transition: border 0.1s ease-in-out;
+    -moz-transition: border 0.1s ease-in-out;
+    text-decoration: none !important;
+    margin: -5px;
+  }
+`
 
 export default () => (
   <Layout>
@@ -26,10 +27,10 @@ export default () => (
         <link rel="canonical" href="https://majarah.net/" />
       </Helmet>
     </div>
-    <h1>Welcome to <b>Hazza Alkaabi</b>'s web home, Majarah.</h1>
-    <div
-      style={{ marginBottom: `70px`, marginTop: `80px` }}
-    >
+    <h1>
+      Welcome to <b>Hazza Alkaabi</b>'s web home, Majarah.
+    </h1>
+    <div style={{ marginBottom: `70px`, marginTop: `80px` }}>
       <div
         style={{
           display: `block`,
@@ -40,18 +41,30 @@ export default () => (
           textAlign: `center`,
           fontWeight: `bold`,
           marginBottom: `35px`,
-          fontSize: `22px`
+          fontSize: `22px`,
         }}
       >
         Originals
       </div>
-      <StyledLink to="/SaguarCraft">SaguarCraft</StyledLink>
-      <StyledLink to="/Aetheryte">Aetheryte</StyledLink>
-      <StyledLink to="/OfftheRails">Off the Rails</StyledLink>
-      <StyledLink to="/RCR3K">RCR3K</StyledLink>
-      <StyledLink to="/Sibyl">Sibyl</StyledLink>
+      <Grid width={200} gap={24}>
+        <div>
+          <StyledLink to="/SaguarCraft">SaguarCraft</StyledLink>
+        </div>
+        <div>
+          <StyledLink to="/Aetheryte">Aetheryte</StyledLink>
+        </div>
+        <div>
+          <StyledLink to="/OfftheRails">Off the Rails</StyledLink>
+        </div>
+        <div>
+          <StyledLink to="/RCR3K">RCR3K</StyledLink>
+        </div>
+        <div>
+          <StyledLink to="/Sibyl">Sibyl</StyledLink>
+        </div>
+      </Grid>
     </div>
-    <div style={{ marginTop: `20px`}}>
+    <div style={{ marginTop: `20px` }}>
       <div
         style={{
           display: `block`,
@@ -62,12 +75,18 @@ export default () => (
           textAlign: `center`,
           fontWeight: `bold`,
           marginBottom: `35px`,
-          fontSize: `22px`
+          fontSize: `22px`,
         }}
       >
         Contributions
       </div>
-      <StyledLink to="/ThousandRoomsTranslation">Thousand rooms (Arabic translation)</StyledLink>
+      <Grid width={200} gap={24}>
+        <div>
+          <StyledLink to="/ThousandRoomsTranslation">
+            Thousand rooms (Arabic translation)
+          </StyledLink>
+        </div>
+      </Grid>
     </div>
   </Layout>
 )
