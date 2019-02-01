@@ -8,13 +8,13 @@ import Grid from 'react-css-grid'
 const StyledLink = styled(Link)`
   padding: 4px;
   font-weight: 100 !important;
+  border: 3px solid #f4f4f4;
   &:hover {
     border: 3px solid black;
     transition: border 0.1s ease-in-out;
     -webkit-transition: border 0.1s ease-in-out;
     -moz-transition: border 0.1s ease-in-out;
     text-decoration: none !important;
-    margin: -5px;
   }
 `
 
